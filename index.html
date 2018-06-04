@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Item Entry </title>
+	
+
+<script type="text/javascript">
+function calc()	
+{
+var q,p,t;
+q=document.getElementById("qt").value;
+p=document.getElementById("pr").value;
+
+t=q*p;
+document.getElementById("to").value=t;
+}
+
+</script>
+
+
+	<style >
+		.myclass1
+		{
+			position: absolute;
+			left: 35%;
+			top:15%;
+			color: Black;
+			font-size: 20px;
+		}
+		.myclass2
+		{
+			background-color: #7DCEE1;
+		}
+.myclass3
+{
+	position: absolute;
+	left:35%;
+	top:105%;
+}
+body{
+	    background-image: url("walden-main-image.jpg");
+}
+	</style>
+</head>
+<body>
+
+<center>
+		<form action="main2.php" method="POST">
+		
+<table class="myclass1"  border="3">
+	<tbody>
+		<tr>
+			<td>
+				<img src="baba.png" alt="" height=100 width=400></img>
+    
+			</td>
+		</tr>
+		<tr>
+			<td class="myclass2">
+				<label>Select District: 
+						<select name="dist">
+						<option value="Burdwan">Burdwan</option>
+
+
+
+						<option value="Siliguri">Siliguri</option>
+						<option value="Kolkata">Kolkata</option>
+						<option value="Asansol">Asansol</option>
+						</select> </label><br><br>
+						Supplier ID: <input type="text" name="sid"><br><br>
+						Item Name <input type="text" name="in"><br><br>
+						Quantity <input type="number" name="qtt" id="qt"><br><br>
+						Price <input type="text" name="pri" id="pr"><br><br>
+						Total <input type="text" name="tot" id="to">
+						<input type="button" name="cal" value="Calculate" onclick="calc()"><br>
+
+			</td>
+		</tr>
+		<tr>
+				<td class="myclass3">
+					<input type="submit" value="Submit"> 
+					<input type="reset" value="Reset">
+				</td>
+			</tr>
+</tbody>
+</table>
+</form>
+</center>
+
+
+
+
+</body>
+</html>
